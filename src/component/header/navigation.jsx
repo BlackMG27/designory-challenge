@@ -6,12 +6,18 @@ const Navigation = () => (
     <Fragment>
         <nav>
             <Logo className="logo"/>
-            <ul className="nav-links">
-                <li>
-                    <a href="portfolio">Portfolio</a>
-                    <a href="Process">Process</a>
-                    <a href="Journal">Journal</a>
-                    <a href="Contact-Info">Contact Info</a>
+            <ul className="nav-links" aria-label="Main Menu">
+                <li className="nav-link">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li className="nav-link">
+                    <a href="#">Process</a>
+                </li>
+                <li className="nav-link">
+                    <a href="#">Journal</a>
+                </li>
+                <li className="nav-link">
+                    <a href="#">Contact Info</a>
                 </li>
             </ul>
         </nav>
