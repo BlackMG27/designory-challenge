@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "designory front end developer take home test boilerplate",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=firefox react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
