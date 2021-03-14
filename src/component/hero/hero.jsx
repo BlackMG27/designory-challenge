@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import Button from './../button/button';
 
 
 const Hero = () => (
@@ -6,7 +7,7 @@ const Hero = () => (
         <section className="hero-section">
             <h2 className="subtitle">In Honor of Women's History Month</h2>
             <h1 className="title">Three Badass Women in History</h1>
-            <button className="hero-button" role="button">Check Them Out!</button>
+            <Button text="Check Them Out!"/>
         </section>
     </Fragment>
 )

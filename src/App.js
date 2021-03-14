@@ -2,6 +2,7 @@
 import {Fragment} from 'react';
 import Navigation from './component/header/navigation';
 import Hero from './component/hero/hero';
+import Footer from './component/footer/footer';
 
 import './App.scss';
 
@@ -10,6 +11,7 @@ function App() {
 		<Fragment>
 			<Navigation/>
 			<Hero/>
+			<Footer/>
 		</Fragment>
 		
 	);
