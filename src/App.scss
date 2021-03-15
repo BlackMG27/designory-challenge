@@ -3,9 +3,146 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Shippori Mincho B1', Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    height: 100%;
+}
+
+
+section,
+footer{
+    padding: 4rem;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: inline-block;
+        padding: 4rem;
+        width: 300px;
+        vertical-align: center;
+    }
+
+    .flex-grow{
+        flex-grow: 1;
+    }
+    .nav-links{
+        display: flex;
+
+        .nav-link{
+            margin-top: -4.1%;
+            padding: 1.5rem 3rem;
+            list-style: none;
+
+            a{
+                display: inline-block;
+                text-decoration: none;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.article-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .article-item{
+        max-width: 400px;
+        border: 1px solid black;
+
+        &__image{
+            margin-bottom: 2rem;
+            img{
+                max-width: 400px;
+                max-height: 400px;
+                overflow: hidden;
+                
+            }
+        } 
+        
+        &__title{
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        &__subtitle{
+            font-size: 1.35rem;
+            margin-bottom: .75rem;
+        }
+
+        &__text{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+
+
+    }
+}
+
+.feature-section{
+    display: flex;
+    
+    &__image{
+        flex: 45%;
+        img{
+            width:100%;
+        }
+    }
+
+    &__content{
+        flex: 55%;
+        padding-left: 5rem;
+    }
+
+    &__title{
+        font-size: 3.5rem;
+        margin-bottom: 1.25rem;
+    }
+    &__subtitle{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        line-height: 2.75rem;
+        margin-bottom: 4rem;
+    }
+}
+
+footer{
+    border-top: 2px solid black;
+    padding-top: 1.25rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+button{
+    padding: 10px 30px;
+    max-width: 24rem;
+    cursor: pointer;
 }

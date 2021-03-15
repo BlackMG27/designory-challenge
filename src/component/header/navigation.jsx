@@ -4,8 +4,10 @@ import logo, { ReactComponent as Logo } from './logo.svg';
 
 const Navigation = () => (
     <Fragment>
-        <nav>
-            <Logo className="logo"/>
+        
+        <nav role="navigation">
+        <Logo className="logo" title="Designory Logo" />
+            <div className="middle flex-grow"></div>
             <ul className="nav-links" aria-label="Main Menu">
                 <li className="nav-link">
                     <a href="#">Portfolio</a>
