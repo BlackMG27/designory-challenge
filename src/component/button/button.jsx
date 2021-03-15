@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
 
-const Button = ({text}) => (
+const Button = ({text, label}) => (
     <Fragment>
-        <button className="btn" role="button">{text}</button>
+        <button className="btn" aria-label={label} role="button">{text}</button>
     </Fragment>
 )
 
