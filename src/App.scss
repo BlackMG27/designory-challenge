@@ -24,9 +24,11 @@ footer{
 
 nav{
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
     .logo{
         display: inline-block;
         padding: 4rem;
@@ -34,15 +36,13 @@ nav{
         vertical-align: center;
     }
 
-    .flex-grow{
-        flex-grow: 1;
-    }
     .nav-links{
         display: flex;
 
         .nav-link{
-            margin-top: -4.1%;
+            margin-top: -3.5%;
             padding: 1.5rem 3rem;
+            font-size: 1.125rem;
             list-style: none;
 
             a{
@@ -58,6 +58,22 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #e6d2d2;
+    height: 95vh;
+
+        &__content{
+            margin-top: -12.5%;
+        }
+
+        &__title{
+            font-size: 6rem;
+            margin-top: .5rem;
+        }
+
+        &__subtitle{
+            font-size: 2.75rem;
+        }
+
 
 }
 
@@ -67,16 +83,21 @@ nav{
     justify-content: space-between;
 
     .article-item{
+        margin-top: -20%;
+        background-color: #ffffff;
         max-width: 400px;
         border: 1px solid black;
+        padding: .8rem;
+        box-shadow: 3px 5px 6px rgba(54, 3, 3, .4);
 
         &__image{
             margin-bottom: 2rem;
+            max-width: 400px;
+            vertical-align: middle;
+            margin-bottom: 2rem;
             img{
-                max-width: 400px;
-                max-height: 400px;
+                width: 100%;
                 overflow: hidden;
-                
             }
         } 
         
@@ -102,9 +123,13 @@ nav{
 
 .feature-section{
     display: flex;
+    background-color: #fcf5e1;
     
     &__image{
+        padding: .8rem;
         flex: 45%;
+        background-color: #fff;
+        box-shadow: 3px 5px 6px rgba(54, 3, 3, .4);
         img{
             width:100%;
         }
@@ -138,11 +163,31 @@ footer{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    a{
+        text-decoration: none;
+        font-weight: 700;
+    }
 }
 
 
 button{
     padding: 10px 30px;
-    max-width: 24rem;
+    max-width: 27rem;
     cursor: pointer;
+    background-color: rgb(54, 3, 3);
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 1.65rem;
+    transition: .25s;
+
+    &:hover{
+        color: rgb(54, 3, 3);
+        background-color: #fefefe;
+        transition: .25s;
+    }
+}
+
+a{
+    color:rgb(54, 3, 3);
 }
