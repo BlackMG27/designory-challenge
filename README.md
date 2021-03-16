@@ -26,3 +26,4 @@ Then simply run `npm start` or `npm run dev` to start developing!
 2. I used Women's History Month as the theme.
 3. I used flexbox as design system because it was only one page and it felt more appropriate
 4. I used 2 different colors with tints to enhance the design
+5. I tired incorpoarting accessibilty standards using A11y Style Guide for reference
