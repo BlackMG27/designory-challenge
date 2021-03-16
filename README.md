@@ -22,6 +22,8 @@ Install all npm modules via:
 
 Then simply run `npm start` or `npm run dev` to start developing!
 
+
+## My Work Decisions 
 1. I divided my work into different components 
 2. I used Women's History Month as the theme.
 3. I used flexbox as design system because it was only one page and it felt more appropriate
