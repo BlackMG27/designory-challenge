@@ -191,3 +191,100 @@ button{
 a{
     color:rgb(54, 3, 3);
 }
+
+/*MEDIA Queries*/
+
+@media(max-width: 800px){
+    nav{
+        flex-direction: column;
+        .nav-link{
+            width: 100%;
+        }
+    }
+
+    .hero-section{
+        height: 40vh;
+        margin: 0 auto;
+        &__content{
+            margin-top: -6%;
+        }
+        &__title{
+            font-size: 3rem;
+        }
+
+        &__subtitle{
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .article-section{
+        display: flex;
+        flex-direction: column;
+        .article-item{
+
+            max-width: 90%;
+            flex: 100%;
+            margin-bottom: 11rem;
+        }
+    }
+
+    .feature-section{
+        display: flex;
+        flex-direction: column;
+        &__image{
+            flex: 100%;
+            margin-bottom: 3rem;
+        }
+        &__content{
+            flex: 100%;  
+        }
+    }
+    
+}
+
+@media(max-width: 600px){
+
+    nav{
+        .nav-links{
+            flex-direction: column;
+            justify-content: center;
+
+            .nav-link{
+                padding: .25rem;
+            }
+        }
+
+        
+    }
+
+    .feature-section{
+        &__content{
+            padding:0;
+        }
+
+        &__title{
+            font-size: 2.5rem;
+        }
+
+        &__subtitle{
+            font-size: 1.75rem;
+        }
+
+        &__text{
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+        }
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem .25rem;
+
+        &__phone{
+            margin-bottom: 1.5rem;
+        }
+    }
+}
